@@ -1,0 +1,60 @@
+{
+  "name": "@bf16/ai-sdk-provider",
+  "version": "0.1.0",
+  "description": "Official Vercel AI SDK provider for bf16.ai 1M-context uncensored LLM APIs (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3.1 Pro) with prompt caching and strict Zero Data Retention",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "ai",
+    "ai-sdk",
+    "vercel-ai-sdk",
+    "bf16",
+    "llm",
+    "deepseek",
+    "glm",
+    "kimi",
+    "openai-compatible",
+    "coding-agents"
+  ],
+  "homepage": "https://bf16.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BF16-AI/bf16-ai-sdk-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BF16-AI/bf16-ai-sdk-provider/issues"
+  },
+  "author": "BF16 Team <hello@bf16.ai> (https://bf16.ai)",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^1.0.0"
+  },
+  "peerDependencies": {
+    "ai": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
