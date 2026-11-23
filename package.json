@@ -1,5 +1,5 @@
 {
-  "name": "@bf16/ai-sdk-provider",
+  "name": "bf16-ai-sdk-provider",
   "version": "0.1.0",
   "description": "Official Vercel AI SDK provider for bf16.ai 1M-context uncensored LLM APIs (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3.1 Pro) with prompt caching and strict Zero Data Retention",
   "type": "module",

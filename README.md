@@ -1,11 +1,11 @@
-# @bf16/ai-sdk-provider
+# bf16-ai-sdk-provider
 
 Official [Vercel AI SDK](https://ai-sdk.dev) provider for [bf16.ai](https://bf16.ai) — 1M-context uncensored open-weight LLMs (DeepSeek V4.1 Flash, GLM-5.3, GLM-5.3 Flash, Kimi K3.1 Pro) with prompt caching, tool calling, structured outputs, and strict Zero Data Retention (ZDR).
 
 ## Install
 
 ```bash
-npm install @bf16/ai-sdk-provider ai
+npm install bf16-ai-sdk-provider ai
 # or install directly from GitHub
 npm install github:BF16-AI/bf16-ai-sdk-provider ai
 ```
@@ -19,7 +19,7 @@ export BF16_API_KEY=your-api-key
 ```
 
 ```ts
-import { bf16 } from '@bf16/ai-sdk-provider';
+import { bf16 } from 'bf16-ai-sdk-provider';
 import { generateText } from 'ai';
 
 const { text } = await generateText({
@@ -33,7 +33,7 @@ console.log(text);
 ### Custom Configuration
 
 ```ts
-import { createBf16 } from '@bf16/ai-sdk-provider';
+import { createBf16 } from 'bf16-ai-sdk-provider';
 
 const customBf16 = createBf16({
   apiKey: process.env.BF16_API_KEY,
