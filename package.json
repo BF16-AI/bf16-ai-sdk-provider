@@ -37,7 +37,7 @@
   "homepage": "https://bf16.ai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BF16-AI/bf16-ai-sdk-provider.git"
+    "url": "git+https://github.com/BF16-AI/bf16-ai-sdk-provider.git"
   },
   "bugs": {
     "url": "https://github.com/BF16-AI/bf16-ai-sdk-provider/issues"
